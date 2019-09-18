@@ -2,14 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>3</title>
+    <title>Урок 3. Циклы, массивы, структуры данных</title>
 </head>
 <body>
-    <script>
-      var a=1000,
-		b = '108',
-		c = a + b;
-		alert (c);
-	</script>
+<h3>С помощью цикла while вывести все простые числа в промежутке от 0 до 100</h3>
+<script>
+var a = 0;
+var b = 100;
+while(a <= b){
+document.write(a++ + " ");
+			}  
+</script>
+
+  <h3>Вывести с помощью цикла for числа от 0 до 9, не используя тело цикла. То есть
+	выглядеть должно вот так:<br/>
+	for(…){// здесь пусто}</h3>
+   <script>
+    for(var number = 0; number <= 9; document.write(number++ + " ")){}
+    </script>  
+     
+<h3>Нарисовать пирамиду с помощью console.log, как показано на рисунке, только у вашей пирамиды должно быть 20 рядов, а не 5</h3>
+     <script>//тут не ясно, не выводится
+        for (var a = 1, pyramida = " "; a <= 20; a++){
+				pyramida="v";
+				console.log("v");
+        }
+    
 </body>
 </html>
