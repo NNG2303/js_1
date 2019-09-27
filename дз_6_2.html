@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 2-2</title>
+   <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+   <div class="block">
+    <table id="goods">
+        <caption><h1>Goods</h1></caption>
+        <tr>
+            <th>Товар</th>
+            <th>Цена</th>
+            <th>Заказ</th>
+        </tr>
+        <tr>
+            <td><img src="img/216092.jpg" id="img_1"></td>
+            <td>100</td>
+            <td><button class="click" onclick="clicked()">Купить</button></td>
+        </tr>
+        <tr>
+            <td><img src="img/216090.jpg" id="img_2"></td>
+            <td>200</td>
+            <td><button class="click" onclick="clicked()">Купить</button></td>
+        </tr>
+        <tr>
+            <td><img src="img/216091.jpg"  id="img_3"></td>
+            <td>300</td>
+            <td><button class="click" onclick="clicked()">Купить</button></td>
+            <p id="target"></p>
+        </tr>
+    </table>
+</div>
+<div class="block">
+    <table id="basket">
+        <caption><h1>Basket</h1></caption>
+        <tr>
+            <th>Товар</th>
+            <th>Цена</th>
+            <th>Заказ</th>
+        </tr>
+        <tr>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+        </tr>
+        <tr>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+        </tr>
+        <tr>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+        </tr>
+    </table>
+</div>
+<script>
+    
+  function clicked () {
+      document.querySelector ('#target').innerText='Button clicked'
+  }
+    
+    
+    var totalCost;
+window.onload = function(){
+    var buttons = document.getElementsByClassName("button");
+    var len = buttons.length;
+    for (var i=0; i<len;i++){
+    buttons[i].addEventListener("click",addToBox);
+   
+    }
+}
+    total.innerHTML = "<p>Итого: " + totalCost + "</p>";
+    addBox.appendChild(total);
+    box.appendChild(addBox);
+}*/</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+li {
+    list-style-type: none; 
+    margin-bottom: 50px;
+}
+
+ul {
+    margin-left: 0; 
+    padding-bottom: 300px;
+    padding-left: 0; 
+}
+
+block{
+    float: left;
+    margin-right: 5%;
+    padding: 20px;
+    width: 40%;
+    height: 400px;
+    size: 400px;
+    border: 2px solid green;
+}
+
+table {
+    border-collapse: collapse; 
+    background: #green; 
+    width: 100%;
+}
+td, th {
+    padding: 15px; 
+    border: 2px solid blue; 
+}
