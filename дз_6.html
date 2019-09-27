@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>dz6</title>
+</head>
+<body>
+   <h1 align="center">Lesson 06</h1>
+   
+<div id="bigPicture">картинка</div>
+<div class="big" id="bigPicture" onclick="myClick()"></div>
+<div>
+    <img src="img/216089.jpg" alt="216089" id="img_1">
+    <img src="img/216090.jpg" alt="216090" id="img_2">
+    <img src="img/216091.jpg" alt="216091" id="img_3">
+    <img src="img/216300.jpg" alt="216300" id="img_4"> <!--такого файла нет-->
+ </div>
+<script>
+    window.onload = function () {
+    var image = document.getElementsByTagName('img');
+    console.log(image);
+    for (var i = 0; i < image.length; i++) {
+        image[i].onclick = changeBigPicture;
+    }
+};
+   function changeBigPicture(e) {
+    var appDiv = document.getElementById('bigPicture'); // div для кратинки
+    appDiv.innerHTML = '';
+    var eventElement = event.target;
+    console.log(eventElement);
+
+    var imageNameParts = eventElement.id.split('_');
+    var src = 'img/big/' + imageNameParts[1] + '.jpg';
+    var imageDomElement = document.createElement('img');
+    imageDomElement.src = src;
+    imageDomElement.onload = function () {alert('Картинка есть!')};
+    imageDomElement.onerror = function () {alert('А нет картинки!')};
+    appDiv.appendChild(imageDomElement);
+};    
+   
+</script>
+  </body>
+</html>
